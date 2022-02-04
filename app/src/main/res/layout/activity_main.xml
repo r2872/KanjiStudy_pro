@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/mainViewPager"
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="0dp" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/gray" />
+
+    <com.google.android.material.tabs.TabLayout
+        style="@style/Base.Widget.Design.TabLayout"
+        android:background="@color/white"
+        android:id="@+id/mainTabLayout"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        app:tabGravity="fill"
+        app:tabMaxWidth="0dp"
+        app:tabTextAppearance="@style/tab_txt" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/gray" />
+
+<!--    <com.google.android.gms.ads.AdView-->
+<!--        xmlns:ads="http://schemas.android.com/apk/res-auto"-->
+<!--        ads:adUnitId="@string/ad_banner_test"-->
+<!--        ads:adSize="BANNER"-->
+<!--        android:id="@+id/ad_banner"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content" />-->
+
+</LinearLayout>
